@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace Rename.Models
+namespace Airline.Models
 {
   public class Class
   {
@@ -12,7 +12,7 @@ namespace Rename.Models
         conn.Open();
 
         var cmd = conn.CreateCommand() as MySqlCommand;
-        cmd.CommandText = @"DELETE FROM _database;";
+        cmd.CommandText = @"DELETE FROM cities;";
         cmd.ExecuteNonQuery();
 
         conn.Close();

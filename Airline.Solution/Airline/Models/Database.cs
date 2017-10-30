@@ -1,8 +1,8 @@
 using System;
 using MySql.Data.MySqlClient;
-using Rename;
+using Airline;
 
-namespace Rename.Models
+namespace Airline.Models
 {
   public class DB
   {

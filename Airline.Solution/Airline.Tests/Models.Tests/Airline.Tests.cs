@@ -2,13 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Rename.Models;
+using Airline.Models;
 
-namespace Rename.Models.Tests
+namespace Airline.Models.Tests
 {
   [TestClass]
-  public class ClassTests : IDisposable
+  public class CityTests : IDisposable
   {
+    public City()
+    {
+        DBConfiguration.ConnectionString = "server=localhost;user id=root;password=root;port=8889;database=airline_test;";
+    }
     public void Dispose()
     {
       Class.ClearAll
